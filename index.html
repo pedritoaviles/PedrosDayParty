@@ -3735,10 +3735,12 @@ var captchaStep = 0;
 var captchaTimer = 45;
 var captchaInterval = null;
 var captchaAttempts = 0;
+var stepAttempts = 0;
 
 function openCaptcha() {
   captchaStep = 0;
   captchaAttempts = 0;
+  stepAttempts = 0;
   document.getElementById('captcha-overlay').classList.add('show');
   document.getElementById('captcha-error').style.display = 'none';
   document.getElementById('captcha-success').classList.remove('show');
@@ -3797,10 +3799,43 @@ function updateRotation(val) {
   document.getElementById('rotate-emoji').style.transform = 'rotate(' + val + 'deg)';
 }
 
+function advanceStep() {
+  if (captchaStep === 5) return; // step 5 handled separately
+  document.getElementById('challenge-' + captchaStep).classList.remove('active');
+  captchaStep++;
+  stepAttempts = 0;
+  updateDots(captchaStep);
+  document.getElementById('challenge-' + captchaStep).classList.add('active');
+  startCaptchaTimer();
+}
+
+function giveUpMessage(step) {
+  var msgs = [
+    'Fine. We cannot definitively prove those raccoons lack sunglasses. Proceeding under protest.',
+    'Your maths is probably wrong but we have lost the will to check. Moving on.',
+    'Close enough. 137 degrees is a suggestion anyway. The raccoon accepts your rotation.',
+    'We accept your transcription. Mostly because we also cannot hear it. Continuing.',
+    'Your raccoon count has been logged as "some." This is now official. Next step.',
+  ];
+  return msgs[step] || 'Fine. Whatever. Moving on.';
+}
+
 function nextChallenge() {
   var err = document.getElementById('captcha-error');
   err.style.display = 'none';
   captchaAttempts++;
+  stepAttempts++;
+
+  // After 2 failed attempts on any step, grudgingly let them through
+  if (stepAttempts > 2 && captchaStep < 5) {
+    err.style.display = 'none';
+    showCaptchaError(giveUpMessage(captchaStep));
+    setTimeout(function() {
+      err.style.display = 'none';
+      advanceStep();
+    }, 1800);
+    return;
+  }
 
   // Validate each step — always wrong for the right reasons
   if (captchaStep === 0) {
@@ -3903,11 +3938,7 @@ function nextChallenge() {
   }
 
   // Advance to next step
-  document.getElementById('challenge-' + captchaStep).classList.remove('active');
-  captchaStep++;
-  updateDots(captchaStep);
-  document.getElementById('challenge-' + captchaStep).classList.add('active');
-  startCaptchaTimer();
+  advanceStep();
 }
 
 function shuffleGrid() {
