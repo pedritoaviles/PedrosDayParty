@@ -668,7 +668,6 @@
     letter-spacing: 0.05em;
     line-height: 1;
   }
-
   .footer-brand span {
     display: block;
     font-family: 'DM Sans', sans-serif;
@@ -678,12 +677,199 @@
     font-weight: 300;
     margin-top: 0.3rem;
   }
-
   .footer-copy {
     font-size: 0.75rem;
     color: rgba(232,217,181,0.35);
     text-align: right;
     line-height: 1.7;
+  }
+
+  /* --- NEW FOOTER --- */
+  footer {
+    background: var(--dark);
+    padding: 0;
+  }
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 3rem;
+    padding: 4rem 4rem 3rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .footer-col-brand .footer-brand { font-size: 2.2rem; }
+  .footer-col-brand p {
+    font-size: 0.78rem;
+    color: rgba(232,217,181,0.3);
+    line-height: 1.7;
+    margin-top: 1rem;
+    max-width: 220px;
+  }
+  .footer-col h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.25em;
+    color: rgba(232,217,181,0.3);
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+  }
+  .footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .footer-col ul li a {
+    font-size: 0.82rem;
+    color: rgba(232,217,181,0.55);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    display: inline;
+  }
+  .footer-col ul li a:hover { color: var(--gold); }
+  .footer-col ul li span {
+    font-size: 0.72rem;
+    color: rgba(232,217,181,0.2);
+    display: block;
+    margin-top: 0.15rem;
+  }
+  .footer-sponsors-strip {
+    padding: 1.5rem 4rem;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+  .footer-sponsors-strip .fss-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(232,217,181,0.2);
+    white-space: nowrap;
+  }
+  .footer-sponsor-logo {
+    font-size: 0.72rem;
+    color: rgba(232,217,181,0.2);
+    letter-spacing: 0.1em;
+    transition: color 0.2s;
+    cursor: default;
+  }
+  .footer-sponsor-logo:hover { color: rgba(232,217,181,0.5); }
+  .footer-bottom {
+    padding: 1.5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  .footer-legal-links {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .footer-legal-links a {
+    font-size: 0.7rem;
+    color: rgba(232,217,181,0.25);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .footer-legal-links a:hover { color: rgba(232,217,181,0.6); }
+
+  /* --- TERMS & CONDITIONS PAGE --- */
+  .terms-wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5rem 4rem 6rem;
+  }
+  .terms-wrap .section-label { margin-bottom: 0.8rem; }
+  .terms-effective {
+    font-size: 0.75rem;
+    color: var(--mid);
+    letter-spacing: 0.1em;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(107,90,62,0.25);
+  }
+  .terms-section {
+    margin-bottom: 2.8rem;
+  }
+  .terms-section h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.08em;
+    color: var(--dark);
+    margin-bottom: 0.8rem;
+    padding-left: 0.8rem;
+    border-left: 3px solid var(--gold);
+  }
+  .terms-section p, .terms-section li {
+    font-size: 0.88rem;
+    color: var(--mid);
+    line-height: 1.85;
+    margin-bottom: 0.6rem;
+  }
+  .terms-section ul {
+    padding-left: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+  .terms-section li { margin-bottom: 0.4rem; }
+  .terms-section strong { color: var(--dark); }
+  .terms-section em { font-style: italic; color: var(--mid); opacity: 0.85; }
+  .terms-section .legal-note {
+    background: var(--sand);
+    border-left: 3px solid var(--gold);
+    padding: 0.8rem 1.2rem;
+    font-size: 0.78rem;
+    color: var(--mid);
+    margin-top: 0.8rem;
+    line-height: 1.7;
+  }
+  .terms-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.75rem;
+    color: var(--gold);
+    letter-spacing: 0.2em;
+    margin-right: 0.5rem;
+    opacity: 0.7;
+  }
+  .terms-signature {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--dark);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  .terms-sig-block .sig-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-bottom: 2rem;
+  }
+  .terms-sig-block .sig-line {
+    border-bottom: 1px solid var(--dark);
+    margin-bottom: 0.5rem;
+    height: 2rem;
+  }
+  .terms-sig-block .sig-name {
+    font-size: 0.72rem;
+    color: var(--mid);
+  }
+  .terms-sig-block .sig-name span {
+    font-size: 0.65rem;
+    color: rgba(107,90,62,0.5);
+    display: block;
   }
 
   /* ─── PAGE TRANSITIONS ─── */
@@ -2126,6 +2312,525 @@
     margin-bottom: 0.8rem;
     transition: transform 0.1s;
   }
+  /* --- SPONSORS PAGE --- */
+  .sponsors-hero {
+    padding: 5rem 4rem 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .sponsors-intro {
+    max-width: 680px;
+    color: var(--mid);
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+  .sponsors-intro strong { color: var(--dark); }
+
+  /* Title sponsor */
+  .sponsor-title-block {
+    background: var(--dark);
+    padding: 4rem;
+    margin: 0 0 2px;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s;
+  }
+  .sponsor-title-block:hover { background: #1f1810; }
+  .sponsor-title-block::before {
+    content: 'TITLE SPONSOR';
+    position: absolute;
+    top: 1.2rem; right: 1.5rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    opacity: 0.5;
+    font-weight: 500;
+  }
+  .sponsor-logo-big {
+    flex-shrink: 0;
+    width: 160px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sponsor-title-info h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.8rem;
+    color: var(--sand);
+    letter-spacing: 0.04em;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  .sponsor-title-info .s-tagline {
+    font-size: 0.82rem;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+  }
+  .sponsor-title-info p {
+    font-size: 0.85rem;
+    color: rgba(232,217,181,0.45);
+    line-height: 1.65;
+    max-width: 520px;
+  }
+  .sponsor-title-info p em { color: rgba(232,217,181,0.65); font-style: italic; }
+
+  /* Tier label */
+  .sponsor-tier-label {
+    padding: 2.5rem 4rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .sponsor-tier-label h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    color: var(--mid);
+    border-bottom: 1px solid rgba(107,90,62,0.3);
+    padding-bottom: 0.8rem;
+  }
+
+  /* Sponsor grid */
+  .sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    max-width: 1200px;
+    margin: 0 auto 2px;
+    padding: 0 0;
+  }
+  .sponsor-card {
+    background: var(--dark);
+    padding: 2rem 2rem 1.8rem;
+    position: relative;
+    transition: background 0.25s, transform 0.25s cubic-bezier(0.22,1,0.36,1);
+    cursor: default;
+    overflow: hidden;
+  }
+  .sponsor-card:hover {
+    background: #1f1810;
+    transform: translateY(-3px);
+    z-index: 2;
+  }
+  .sponsor-card::before {
+    content: attr(data-tier);
+    position: absolute;
+    top: 0.8rem; right: 1rem;
+    font-size: 0.58rem;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    opacity: 0.35;
+    text-transform: uppercase;
+  }
+  .sponsor-card-logo {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+  }
+  .sponsor-card-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    color: var(--sand);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.3rem;
+    line-height: 1;
+  }
+  .sponsor-card-role {
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.7;
+    margin-bottom: 0.8rem;
+  }
+  .sponsor-card-desc {
+    font-size: 0.78rem;
+    color: rgba(232,217,181,0.4);
+    line-height: 1.65;
+  }
+  .sponsor-card-desc em { color: rgba(232,217,181,0.6); font-style: italic; }
+
+  /* Small sponsors row */
+  .sponsor-small-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    max-width: 1200px;
+    margin: 0 auto 2px;
+  }
+  .sponsor-small-card {
+    background: var(--dark);
+    padding: 1.5rem;
+    text-align: center;
+    transition: background 0.2s, transform 0.2s;
+    cursor: default;
+  }
+  .sponsor-small-card:hover { background: #1f1810; transform: translateY(-2px); }
+  .sponsor-small-logo {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+    display: block;
+  }
+  .sponsor-small-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.9rem;
+    color: var(--sand);
+    letter-spacing: 0.08em;
+    margin-bottom: 0.25rem;
+  }
+  .sponsor-small-role {
+    font-size: 0.62rem;
+    color: rgba(232,217,181,0.3);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* Disclaimer strip */
+  .sponsor-disclaimer {
+    background: var(--sand);
+    padding: 2rem 4rem;
+    max-width: 1200px;
+    margin: 2px auto 0;
+    font-size: 0.75rem;
+    color: var(--mid);
+    line-height: 1.7;
+  }
+  .sponsor-disclaimer strong { color: var(--dark); }
+
+  /* Become a sponsor CTA */
+  .become-sponsor {
+    background: var(--gold);
+    padding: 3.5rem 4rem;
+    max-width: 1200px;
+    margin: 2px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  .become-sponsor h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: var(--dark);
+    line-height: 1;
+    letter-spacing: 0.03em;
+  }
+  .become-sponsor p {
+    font-size: 0.85rem;
+    color: var(--dark);
+    opacity: 0.7;
+    line-height: 1.6;
+    max-width: 400px;
+    margin-top: 0.5rem;
+  }
+  .become-sponsor-btn {
+    background: var(--dark);
+    color: var(--gold);
+    border: none;
+    padding: 1rem 2.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: all 0.25s;
+  }
+  .become-sponsor-btn:hover { background: var(--cream); color: var(--dark); }
+
+  /* --- PRESS & MEDIA PAGE --- */
+  .press-hero {
+    background: var(--dark);
+    padding: 5rem 4rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .press-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 90% 50%, rgba(212,160,23,0.07) 0%, transparent 60%);
+  }
+  .press-hero-inner { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
+  .press-hero .section-label { color: rgba(232,217,181,0.4); }
+  .press-hero .section-title { color: var(--sand); margin-bottom: 1.5rem; }
+  .press-hero-sub {
+    font-size: 1rem;
+    color: rgba(232,217,181,0.45);
+    line-height: 1.7;
+    max-width: 600px;
+    margin-bottom: 3rem;
+  }
+  .press-hero-sub strong { color: var(--sand); }
+  .press-awards-row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .press-award {
+    background: rgba(212,160,23,0.1);
+    border: 1px solid rgba(212,160,23,0.2);
+    padding: 0.7rem 1.4rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  /* Featured review */
+  .press-featured {
+    background: var(--gold);
+    padding: 5rem 4rem;
+  }
+  .press-featured-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .press-featured-outlet {
+    font-size: 0.72rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--dark);
+    opacity: 0.55;
+    margin-bottom: 1.5rem;
+  }
+  .press-featured-quote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(1.6rem, 3.5vw, 2.8rem);
+    color: var(--dark);
+    line-height: 1.4;
+    margin-bottom: 2rem;
+  }
+  .press-featured-stars {
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  .press-featured-byline {
+    font-size: 0.8rem;
+    color: var(--dark);
+    opacity: 0.6;
+  }
+  .press-featured-byline strong { opacity: 1; }
+
+  /* Review grid */
+  .press-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 4rem;
+  }
+  .press-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-bottom: 2px;
+  }
+  .press-card {
+    background: var(--dark);
+    padding: 2.5rem 2rem;
+    position: relative;
+    transition: background 0.25s;
+    overflow: hidden;
+  }
+  .press-card:hover { background: #1f1810; }
+  .press-card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 0.3s cubic-bezier(0.22,1,0.36,1);
+    transform-origin: left;
+  }
+  .press-card:hover::after { transform: scaleX(1); }
+  .press-card-outlet {
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(232,217,181,0.3);
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .outlet-dot {
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: var(--gold);
+    opacity: 0.5;
+    flex-shrink: 0;
+  }
+  .press-card-stars {
+    color: var(--gold);
+    font-size: 0.85rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+  }
+  .press-card-quote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--sand);
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+  .press-card-context {
+    font-size: 0.72rem;
+    color: rgba(232,217,181,0.3);
+    line-height: 1.6;
+    font-style: italic;
+    padding-top: 0.8rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .press-card-context strong { color: rgba(232,217,181,0.5); font-style: normal; }
+  .press-card-reviewer {
+    font-size: 0.72rem;
+    color: rgba(232,217,181,0.45);
+    margin-top: 1rem;
+    font-weight: 500;
+  }
+
+  /* Quotes ticker */
+  .press-ticker {
+    background: var(--sand);
+    overflow: hidden;
+    padding: 1.2rem 0;
+    white-space: nowrap;
+  }
+  .press-ticker-inner {
+    display: inline-block;
+    animation: marqueeScroll 30s linear infinite;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: var(--mid);
+    text-transform: uppercase;
+  }
+
+  /* Social proof strip */
+  .press-social {
+    background: var(--cream);
+    padding: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .press-social h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    color: var(--dark);
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+  }
+  .press-social-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .social-post {
+    background: var(--dark);
+    padding: 1.5rem;
+    position: relative;
+  }
+  .social-post-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .social-avatar {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  .social-username {
+    font-size: 0.8rem;
+    color: var(--sand);
+    font-weight: 500;
+  }
+  .social-handle {
+    font-size: 0.68rem;
+    color: rgba(232,217,181,0.3);
+    margin-top: 0.1rem;
+  }
+  .social-platform {
+    margin-left: auto;
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(232,217,181,0.2);
+  }
+  .social-text {
+    font-size: 0.82rem;
+    color: rgba(232,217,181,0.65);
+    line-height: 1.65;
+    margin-bottom: 0.8rem;
+  }
+  .social-text strong { color: var(--sand); }
+  .social-meta {
+    font-size: 0.65rem;
+    color: rgba(232,217,181,0.2);
+    display: flex;
+    gap: 1rem;
+  }
+
+  /* Press kit */
+  .press-kit {
+    background: var(--dark);
+    padding: 3rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2px auto 0;
+  }
+  .press-kit h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--sand);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4rem;
+  }
+  .press-kit p {
+    font-size: 0.82rem;
+    color: rgba(232,217,181,0.4);
+    line-height: 1.6;
+    max-width: 420px;
+  }
+  .press-kit-btn {
+    background: var(--gold);
+    color: var(--dark);
+    border: none;
+    padding: 1rem 2.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: all 0.25s;
+  }
+  .press-kit-btn:hover { background: var(--sand); }
+
+  @media (max-width: 768px) {
+    .press-grid, .press-social-grid { grid-template-columns: 1fr; }
+    .press-hero, .press-section, .press-social, .press-kit { padding: 3rem 1.5rem; }
+  }
+
 </style>
 </head>
 <body>
@@ -2146,6 +2851,8 @@
     <li><a href="#" onclick="showTab('faq', this)">faqs</a></li>
     <li><a href="#" onclick="showTab('location', this)">location</a></li>
     <li><a href="#" onclick="showTab('complaints', this)" style="opacity:0.5;">complaints</a></li>
+    <li><a href="#" onclick="showTab('press', this)">press</a></li>
+    <li><a href="#" onclick="showTab('sponsors', this)">sponsors</a></li>
     <li><a href="#" class="nav-cta" onclick="showTab('tickets', this)">GET TICKETS</a></li>
   </ul>
 </nav>
@@ -3318,6 +4025,199 @@
 
 </div>
 
+<!-- ════════════════ PRESS & MEDIA ════════════════ -->
+<div id="tab-press" class="tab">
+
+  <!-- HERO -->
+  <div class="press-hero">
+    <div class="press-hero-inner">
+      <p class="section-label reveal">Press & Media</p>
+      <h2 class="section-title reveal">AS SEEN<br>EVERYWHERE*</h2>
+      <p class="press-hero-sub reveal">Pedro's Day Party has been covered by some of the most <strong>influential voices</strong> in music, culture, and the Lisbon residential social scene. Below is a selection of critical responses, testimonials, and unsolicited opinions collected from various sources, some of which are real people.<br><br><span style="font-size:0.72rem; opacity:0.5;">*everywhere defined as: the group chat, Pedro's head, and a corner of the internet that does not technically exist yet.</span></p>
+      <div class="press-awards-row reveal">
+        <div class="press-award">&#9733; Best House Party in this Specific Building 2026</div>
+        <div class="press-award">&#9733; Pedro's Mum's Favourite Event (Attended: 0)</div>
+        <div class="press-award">&#9733; Ringo Certified &#x2022; Partially</div>
+        <div class="press-award">&#9733; Chips Guaranteed</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURED REVIEW -->
+  <div class="press-featured">
+    <div class="press-featured-inner">
+      <div class="press-featured-outlet">Pedro's Group Chat &nbsp;&#x2022;&nbsp; 207 Unread Messages &nbsp;&#x2022;&nbsp; WhatsApp, Portugal</div>
+      <div class="press-featured-quote">"A genuine cultural moment. I was there and I can confirm it happened. The chips were incredible. Pedro played for so long I forgot my own name, which I think was the point."</div>
+      <span class="press-featured-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <div class="press-featured-byline"><strong>Someone Who Was There</strong> &nbsp;&#x2022;&nbsp; Verified Attendee &nbsp;&#x2022;&nbsp; Left at 6 AM voluntarily</div>
+    </div>
+  </div>
+
+  <!-- REVIEW GRID ROW 1 -->
+  <div class="press-section">
+    <p class="section-label reveal">Critical reception</p>
+    <h3 class="section-title reveal" style="font-size:clamp(2rem,4vw,4rem); margin-bottom:2rem;">WHAT THEY SAID</h3>
+
+    <div class="press-grid stagger">
+
+      <div class="press-card">
+        <div class="press-card-outlet"><span class="outlet-dot"></span>Resident Advisor</div>
+        <div class="press-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="press-card-quote">"One of the most important parties happening in any flat in the greater Lisbon metropolitan area right now."</div>
+        <div class="press-card-reviewer">— Review submitted to Resident Advisor</div>
+        <div class="press-card-context"><strong>Editorial note:</strong> Resident Advisor did not publish this review. It was submitted by Pedro. They have not responded. Pedro considers this a soft yes.</div>
+      </div>
+
+      <div class="press-card">
+        <div class="press-card-outlet"><span class="outlet-dot"></span>DJ Mag</div>
+        <div class="press-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="press-card-quote">"Pedro's Infinite Set represents a genuine evolution of the after party format. No end time. No mercy. No notes."</div>
+        <div class="press-card-reviewer">— DJ Mag (anticipated, 2026)</div>
+        <div class="press-card-context"><strong>Editorial note:</strong> DJ Mag has not reviewed this party. This is the review Pedro believes they would write if they came. He has not invited them. He is working up to it.</div>
+      </div>
+
+      <div class="press-card">
+        <div class="press-card-outlet"><span class="outlet-dot"></span>The Guardian</div>
+        <div class="press-card-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        <div class="press-card-quote">"I didn't want to leave. I left at 9 PM for a prior commitment. I have thought about it every day since."</div>
+        <div class="press-card-reviewer">— Someone who left at 9 PM</div>
+        <div class="press-card-context"><strong>Editorial note:</strong> This person is not affiliated with The Guardian. They work in logistics. They have asked to remain anonymous. The four-star rating reflects the one hour they missed.</div>
+      </div>
+
+      <div class="press-card">
+        <div class="press-card-outlet"><span class="outlet-dot"></span>Mixmag</div>
+        <div class="press-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="press-card-quote">"The terrace blue wall alone is worth the trip. The music is the rest of the trip. Both trips are good."</div>
+        <div class="press-card-reviewer">— Mixmag (projection, 2026)</div>
+        <div class="press-card-context"><strong>Editorial note:</strong> Mixmag has a policy of not reviewing private house parties. Pedro respects this policy. Pedro disagrees with this policy. Pedro has bookmarked their submissions page.</div>
+      </div>
+
+      <div class="press-card">
+        <div class="press-card-outlet"><span class="outlet-dot"></span>Time Out Lisbon</div>
+        <div class="press-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="press-card-quote">"The best party in Lisbon that Time Out Lisbon technically doesn't know about yet."</div>
+        <div class="press-card-reviewer">— Time Out Lisbon (manifested)</div>
+        <div class="press-card-context"><strong>Editorial note:</strong> Pedro emailed Time Out Lisbon once. He used the wrong address. An out-of-office reply was received. Pedro interpreted this as interest.</div>
+      </div>
+
+      <div class="press-card">
+        <div class="press-card-outlet"><span class="outlet-dot"></span>Pitchfork</div>
+        <div class="press-card-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        <div class="press-card-quote">"Undeniably human. The chips are structural. Ringo is a metaphor for something, though we're not certain what."</div>
+        <div class="press-card-reviewer">— Pitchfork (conceptual review)</div>
+        <div class="press-card-context"><strong>Editorial note:</strong> Pitchfork gave it 8.2 in Pedro's imagination. The missing star is from a sub-editor who had never heard of Pedro. The sub-editor was wrong.</div>
+      </div>
+
+    </div>
+
+    <!-- TICKER -->
+    <div class="press-ticker" style="margin: 2px 0;">
+      <div class="press-ticker-inner">
+        "Life-changing" &#x2014; Ringo (unverified) &nbsp;&nbsp;&bull;&nbsp;&nbsp; "I've never felt more alive" &#x2014; Person on the dance floor at 4am &nbsp;&nbsp;&bull;&nbsp;&nbsp; "The chips were everything" &#x2014; Multiple sources &nbsp;&nbsp;&bull;&nbsp;&nbsp; "Pedro is a visionary" &#x2014; Pedro &nbsp;&nbsp;&bull;&nbsp;&nbsp; "The blue wall moved me spiritually" &#x2014; Unknown attendee &nbsp;&nbsp;&bull;&nbsp;&nbsp; "I am still on the dance floor" &#x2014; Someone, possibly still there &nbsp;&nbsp;&bull;&nbsp;&nbsp; "10/10 would lose track of time again" &#x2014; The whole group chat &nbsp;&nbsp;&bull;&nbsp;&nbsp; "Life-changing" &#x2014; Ringo (unverified) &nbsp;&nbsp;&bull;&nbsp;&nbsp; "I've never felt more alive" &#x2014; Person on the dance floor at 4am &nbsp;&nbsp;&bull;&nbsp;&nbsp; "The chips were everything" &#x2014; Multiple sources &nbsp;&nbsp;&bull;&nbsp;&nbsp; "Pedro is a visionary" &#x2014; Pedro &nbsp;&nbsp;&bull;&nbsp;&nbsp; "The blue wall moved me spiritually" &#x2014; Unknown attendee &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+      </div>
+    </div>
+
+    <!-- MORE REVIEWS ROW 2 -->
+    <div class="press-grid stagger" style="margin-top:2px;">
+
+      <div class="press-card">
+        <div class="press-card-outlet"><span class="outlet-dot"></span>Vogue Portugal</div>
+        <div class="press-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="press-card-quote">"The rattan chairs. The string lights. The man in the Pedro's Day Party shirt changing the world one track at a time."</div>
+        <div class="press-card-reviewer">— Vogue Portugal (fashion correspondent, implied)</div>
+        <div class="press-card-context"><strong>Editorial note:</strong> Vogue Portugal covers fashion. Pedro considers his aesthetic choices fashion. This is therefore a reasonable category. They have not responded to his outreach which consisted of adding them on LinkedIn.</div>
+      </div>
+
+      <div class="press-card">
+        <div class="press-card-outlet"><span class="outlet-dot"></span>BBC Radio 1</div>
+        <div class="press-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="press-card-quote">"This is exactly the kind of party we wish we could broadcast. We can't. But we wish we could."</div>
+        <div class="press-card-reviewer">— BBC Radio 1 (imagined endorsement)</div>
+        <div class="press-card-context"><strong>Editorial note:</strong> BBC Radio 1 has a strict editorial policy about endorsing residential house parties. Pedro finds this frustrating. He listens to their Essential Mix every week. He feels this relationship should be reciprocal.</div>
+      </div>
+
+      <div class="press-card">
+        <div class="press-card-outlet"><span class="outlet-dot"></span>Pedro's Mum</div>
+        <div class="press-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="press-card-quote">"He works very hard and he loves music. Also did he eat? Tell him to eat something that isn't chips."</div>
+        <div class="press-card-reviewer">— Pedro's Mum, phone call, Sunday morning</div>
+        <div class="press-card-context"><strong>Editorial note:</strong> This is a real quote. It is the most authentic review on this page. Pedro's Mum has attended zero parties but maintains a five-star rating on the grounds that she made the food he ate before everyone arrived.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SOCIAL PROOF -->
+  <div class="press-social">
+    <h3 class="reveal">FROM THE INTERNET</h3>
+    <div class="press-social-grid stagger">
+
+      <div class="social-post">
+        <div class="social-post-header">
+          <div class="social-avatar" style="background:rgba(212,160,23,0.15);">🦝</div>
+          <div>
+            <div class="social-username">raccoon_appreciator</div>
+            <div class="social-handle">@raccoon_appreciator</div>
+          </div>
+          <span class="social-platform">Instagram</span>
+        </div>
+        <div class="social-text">just found out about pedro's day party and the mascot is a raccoon. <strong>i am already spiritually in attendance.</strong> ringo if you're reading this i respect you.</div>
+        <div class="social-meta"><span>&#9829; 847 likes</span><span>34 comments</span></div>
+      </div>
+
+      <div class="social-post">
+        <div class="social-post-header">
+          <div class="social-avatar" style="background:rgba(196,80,26,0.15);">🎧</div>
+          <div>
+            <div class="social-username">techno_critic_9000</div>
+            <div class="social-handle">@techno_critic_9000</div>
+          </div>
+          <span class="social-platform">X / Twitter</span>
+        </div>
+        <div class="social-text">hot take: pedro's infinite set is the most artistically honest thing happening in european club culture right now and it's in someone's flat. <strong>berghain could learn something.</strong></div>
+        <div class="social-meta"><span>&#9829; 2.3k likes</span><span>412 reposts</span></div>
+      </div>
+
+      <div class="social-post">
+        <div class="social-post-header">
+          <div class="social-avatar" style="background:rgba(107,90,62,0.3);">👩‍💼</div>
+          <div>
+            <div class="social-username">Ana M.</div>
+            <div class="social-handle">Google Reviews · 1 review total</div>
+          </div>
+          <span class="social-platform">Google</span>
+        </div>
+        <div class="social-text"><strong>★★★★★</strong> — "Attended for the afternoon, stayed until sunrise. The chips were as advertised. Ringo looked at me once and I felt understood. Pedro's set had no end time and neither did my enjoyment of it. <strong>Would attend again immediately if invited."</strong></div>
+        <div class="social-meta"><span>Helpful &#x1F44D; 34</span></div>
+      </div>
+
+      <div class="social-post">
+        <div class="social-post-header">
+          <div class="social-avatar" style="background:rgba(212,160,23,0.1);">😐</div>
+          <div>
+            <div class="social-username">HansD_1987</div>
+            <div class="social-handle">@HansD_1987 · 3 followers</div>
+          </div>
+          <span class="social-platform">X / Twitter</span>
+        </div>
+        <div class="social-text">went to pedro's day party thinking it would be casual. <strong>it was not casual.</strong> i have been home for two days and i am still listening to techno. i did not listen to techno before this. pedro has done something to me.</div>
+        <div class="social-meta"><span>&#9829; 1 like (Pedro)</span><span>0 reposts</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PRESS KIT -->
+  <div class="press-kit reveal">
+    <div>
+      <h3>PRESS KIT AVAILABLE</h3>
+      <p>Journalists, bloggers, podcasters, and anyone writing something that would benefit from the official Pedro's Day Party raccoon logo in high resolution are welcome to request our press kit. Includes: one logo (PNG), one bio (written by Pedro, reviewed by nobody), one photo of the terrace, and a personal note from Ringo (dictated to Pedro, accuracy not guaranteed).</p>
+    </div>
+    <button class="press-kit-btn" onclick="alert('Thank you for requesting the press kit. It will be sent within 5-7 business years. Pedro is very busy. He is DJing.')">REQUEST PRESS KIT →</button>
+  </div>
+
+</div>
+
 <!-- ════════════════ COMPLAINTS ════════════════ -->
 <div id="tab-complaints" class="tab">
 
@@ -3524,16 +4424,452 @@
   </div>
 </div>
 
+<!-- ════════════════ SPONSORS ════════════════ -->
+<div id="tab-sponsors" class="tab">
+
+  <div class="sponsors-hero">
+    <p class="section-label reveal">Our partners</p>
+    <h2 class="section-title reveal">SPONSORS &<br>PARTNERS</h2>
+    <p class="sponsors-intro reveal">
+      Pedro's Day Party would not be possible without the generous support of our partners, collaborators, and several people who did not technically agree to be sponsors but whose contributions have been noted and immortalised here. <strong>All partnerships are real in spirit if not in contract.</strong>
+    </p>
+  </div>
+
+  <!-- TITLE SPONSOR -->
+  <div class="sponsor-title-block reveal">
+    <div class="sponsor-logo-big">
+      <svg viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+        <!-- Pedro's Mum logo: heart with fork and spoon -->
+        <circle cx="80" cy="50" r="42" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.3"/>
+        <text x="80" y="38" text-anchor="middle" font-size="28" font-family="serif">🍲</text>
+        <text x="80" y="72" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="13" fill="#D4A017" letter-spacing="2">MÃE</text>
+      </svg>
+    </div>
+    <div class="sponsor-title-info">
+      <div class="s-tagline">Title Sponsor · Emotional Support Division</div>
+      <h2>PEDRO'S MUM</h2>
+      <p>
+        The founding patron of Pedro's Day Party and its most reliable emotional infrastructure. Has attended zero editions but has been briefed on all of them via phone call the following morning. Provides <em>unconditional belief that Pedro's DJ career will "work out eventually"</em> and a steady supply of homemade food dropped off two days before the party that Pedro eats before anyone else arrives. Partnership entered into without her knowledge or consent. We are grateful nonetheless.
+      </p>
+    </div>
+  </div>
+
+  <!-- GOLD TIER -->
+  <div class="sponsor-tier-label">
+    <h3>GOLD PARTNERS</h3>
+  </div>
+  <div class="sponsor-grid reveal">
+
+    <div class="sponsor-card" data-tier="Gold">
+      <div class="sponsor-card-logo">
+        <svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg" style="height:50px;width:auto">
+          <rect x="5" y="15" width="30" height="38" rx="4" fill="#D4A017" opacity="0.8"/>
+          <rect x="8" y="18" width="24" height="32" rx="3" fill="#1a1208"/>
+          <circle cx="20" cy="28" r="5" fill="#D4A017" opacity="0.6"/>
+          <text x="44" y="32" font-family="'Bebas Neue',sans-serif" font-size="16" fill="#E8D9B5" letter-spacing="1">WHATEVER</text>
+          <text x="44" y="46" font-family="'Bebas Neue',sans-serif" font-size="16" fill="#D4A017" letter-spacing="1">WAS ON SALE</text>
+        </svg>
+      </div>
+      <div class="sponsor-card-name">Whatever Was On Sale</div>
+      <div class="sponsor-card-role">Official Beer & Beverage Partner</div>
+      <div class="sponsor-card-desc">Pedro's long-standing relationship with his local supermarket's reduced-to-clear fridge has produced some of the most unexpectedly excellent drink selections in day party history. <em>"I don't know what this is but it's 40% off"</em> — Pedro, 2024. No specific brand is endorsed. All brands are equally endorsed if the price is right.</div>
+    </div>
+
+    <div class="sponsor-card" data-tier="Gold">
+      <div class="sponsor-card-logo">
+        <svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg" style="height:50px;width:auto">
+          <text x="10" y="42" font-size="38" font-family="serif">☀️</text>
+          <text x="52" y="28" font-family="'Bebas Neue',sans-serif" font-size="13" fill="#E8D9B5" letter-spacing="1">THE</text>
+          <text x="52" y="44" font-family="'Bebas Neue',sans-serif" font-size="13" fill="#D4A017" letter-spacing="1">SUN</text>
+        </svg>
+      </div>
+      <div class="sponsor-card-name">The Sun</div>
+      <div class="sponsor-card-role">Official Lighting Partner · Afternoon Slot</div>
+      <div class="sponsor-card-desc">Providing warm, golden, completely free lighting since 4.6 billion BCE. The Sun requires no rider, has never missed a show, and consistently delivers peak performance between 14:00 and 19:30. <em>Unavailable for the after party.</em> Contract non-negotiable. The Sun does not answer emails.</div>
+    </div>
+
+    <div class="sponsor-card" data-tier="Gold">
+      <div class="sponsor-card-logo">
+        <svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg" style="height:50px;width:auto">
+          <!-- Neighbours logo: building with angry face -->
+          <rect x="10" y="10" width="35" height="45" rx="2" fill="#3D2E10" stroke="#6B5A3E" stroke-width="1"/>
+          <rect x="16" y="18" width="8" height="8" fill="#D4A017" opacity="0.5"/>
+          <rect x="29" y="18" width="8" height="8" fill="#D4A017" opacity="0.5"/>
+          <rect x="16" y="32" width="8" height="8" fill="#1a1208"/>
+          <rect x="29" y="32" width="8" height="8" fill="#D4A017" opacity="0.5"/>
+          <rect x="20" y="42" width="10" height="13" fill="#6B5A3E"/>
+          <text x="52" y="30" font-family="'Bebas Neue',sans-serif" font-size="11" fill="#E8D9B5" letter-spacing="1">THE</text>
+          <text x="52" y="43" font-family="'Bebas Neue',sans-serif" font-size="11" fill="#D4A017" letter-spacing="1">NEIGHBOURS</text>
+        </svg>
+      </div>
+      <div class="sponsor-card-name">The Neighbours</div>
+      <div class="sponsor-card-role">Official Noise Tolerance Partner</div>
+      <div class="sponsor-card-desc">Without the extraordinary patience of the building's residents, Pedro's Day Party simply would not exist. One neighbour has pre-approved events until 1 AM, which Pedro considers a <em>legally binding verbal contract.</em> Another has not complained in three years, which we interpret as enthusiastic consent. This sponsorship is honorary and unpaid.</div>
+    </div>
+
+  </div>
+
+  <!-- SILVER TIER -->
+  <div class="sponsor-tier-label">
+    <h3>SILVER PARTNERS</h3>
+  </div>
+  <div class="sponsor-grid reveal">
+
+    <div class="sponsor-card" data-tier="Silver">
+      <div class="sponsor-card-logo">
+        <svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg" style="height:50px;width:auto">
+          <text x="8" y="42" font-size="34">🎧</text>
+          <text x="52" y="28" font-family="'Bebas Neue',sans-serif" font-size="12" fill="#E8D9B5" letter-spacing="1">PEDRO'S</text>
+          <text x="52" y="42" font-family="'Bebas Neue',sans-serif" font-size="12" fill="#D4A017" letter-spacing="1">HEADPHONES</text>
+        </svg>
+      </div>
+      <div class="sponsor-card-name">Pedro's Headphones</div>
+      <div class="sponsor-card-role">Official Monitoring Equipment</div>
+      <div class="sponsor-card-desc">One pair. Purchased in 2019. The left ear pad is held on with electrical tape. They have been through three parties, one festival, and a washing machine incident that Pedro does not discuss. <em>Still working. Somehow.</em> Pedro refuses to replace them on the grounds that "they know his ears now."</div>
+    </div>
+
+    <div class="sponsor-card" data-tier="Silver">
+      <div class="sponsor-card-logo">
+        <svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg" style="height:50px;width:auto">
+          <text x="8" y="42" font-size="34">🥔</text>
+          <text x="52" y="28" font-family="'Bebas Neue',sans-serif" font-size="12" fill="#E8D9B5" letter-spacing="1">THE CHIPS</text>
+          <text x="52" y="42" font-family="'Bebas Neue',sans-serif" font-size="11" fill="#D4A017" letter-spacing="1">ALWAYS THERE</text>
+        </svg>
+      </div>
+      <div class="sponsor-card-name">The Chips</div>
+      <div class="sponsor-card-role">Official Snack Infrastructure · Guaranteed</div>
+      <div class="sponsor-card-desc">The only item on the catering menu that has never failed to appear. While the food situation at Pedro's Day Party remains broadly improvised, <em>the chips are structural.</em> They have been present at every edition. They will be present at this one. This is not a promise. It is physics.</div>
+    </div>
+
+    <div class="sponsor-card" data-tier="Silver">
+      <div class="sponsor-card-logo">
+        <svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg" style="height:50px;width:auto">
+          <text x="8" y="42" font-size="34">📱</text>
+          <text x="52" y="26" font-family="'Bebas Neue',sans-serif" font-size="11" fill="#E8D9B5" letter-spacing="1">THE GROUP</text>
+          <text x="52" y="38" font-family="'Bebas Neue',sans-serif" font-size="11" fill="#D4A017" letter-spacing="1">CHAT</text>
+          <text x="52" y="50" font-family="'DM Sans',sans-serif" font-size="8" fill="rgba(232,217,181,0.3)">(207 unread)</text>
+        </svg>
+      </div>
+      <div class="sponsor-card-name">The Group Chat</div>
+      <div class="sponsor-card-role">Official Communications Platform</div>
+      <div class="sponsor-card-desc">Pedro's primary marketing channel, ticketing system, customer service desk, and logistics hub. 34 members. 207 unread messages. Contains the only known record of who confirmed attendance. <em>Last active: 3 minutes ago.</em> Someone just sent a meme. It was Pedro.</div>
+    </div>
+
+  </div>
+
+  <!-- BRONZE / COMMUNITY TIER -->
+  <div class="sponsor-tier-label">
+    <h3>COMMUNITY PARTNERS</h3>
+  </div>
+  <div class="sponsor-small-grid reveal">
+
+    <div class="sponsor-small-card">
+      <span class="sponsor-small-logo">🔌</span>
+      <div class="sponsor-small-name">The Extension Cable</div>
+      <div class="sponsor-small-role">Official Power Infrastructure</div>
+    </div>
+
+    <div class="sponsor-small-card">
+      <span class="sponsor-small-logo">💃</span>
+      <div class="sponsor-small-name">The Kitchen Floor</div>
+      <div class="sponsor-small-role">Surprise Dance Venue Partner</div>
+    </div>
+
+    <div class="sponsor-small-card">
+      <span class="sponsor-small-logo">🌿</span>
+      <div class="sponsor-small-name">The Blue Wall</div>
+      <div class="sponsor-small-role">Official Scenic Backdrop · Peeling Since 2003</div>
+    </div>
+
+    <div class="sponsor-small-card">
+      <span class="sponsor-small-logo">🐱</span>
+      <div class="sponsor-small-name">Ringo</div>
+      <div class="sponsor-small-role">Spiritual Partner · Attendance TBC</div>
+    </div>
+
+    <div class="sponsor-small-card">
+      <span class="sponsor-small-logo">💊</span>
+      <div class="sponsor-small-name">That Isotonic Drink</div>
+      <div class="sponsor-small-role">Official Hydration · Name Unknown</div>
+    </div>
+
+    <div class="sponsor-small-card">
+      <span class="sponsor-small-logo">🪑</span>
+      <div class="sponsor-small-name">The Rattan Chairs</div>
+      <div class="sponsor-small-role">Official Seating Partner · Limited Stock</div>
+    </div>
+
+    <div class="sponsor-small-card">
+      <span class="sponsor-small-logo">💡</span>
+      <div class="sponsor-small-name">The String Lights</div>
+      <div class="sponsor-small-role">Official Ambience · Dusk Onwards</div>
+    </div>
+
+    <div class="sponsor-small-card">
+      <span class="sponsor-small-logo">🗒️</span>
+      <div class="sponsor-small-name">Pedro's To-Do List</div>
+      <div class="sponsor-small-role">Official Planning Partner · Mostly Ignored</div>
+    </div>
+
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div class="sponsor-disclaimer reveal">
+    <strong>Sponsorship disclosure:</strong> None of the above sponsors have paid anything, signed anything, or in most cases been informed of their inclusion. Pedro's Mum was told about the website and said "that's nice, did you eat?" The Sun could not be reached for comment. The chips declined to issue a statement. The extension cable is just an extension cable. Pedro's Day Party thanks all partners for their real or imagined contributions and looks forward to a continued relationship built on mutual respect and plausible deniability.
+  </div>
+
+  <!-- BECOME A SPONSOR CTA -->
+  <div class="become-sponsor reveal">
+    <div>
+      <h3>BECOME A SPONSOR</h3>
+      <p>Interested in associating your brand, concept, or inanimate object with Pedro's Day Party? Sponsorship packages start at €0 and include your logo on this page, a mention in the group chat (207 unread), and Pedro saying your name out loud once during the event, possibly mid-set.</p>
+    </div>
+    <button class="become-sponsor-btn" onclick="alert('Thank you for your interest. Pedro will be in touch within 5-7 business years. In the meantime, please bring chips.')">ENQUIRE NOW →</button>
+  </div>
+
+</div>
+
+<!-- ════════════════ TERMS & CONDITIONS ════════════════ -->
+<div id="tab-terms" class="tab">
+  <div class="terms-wrap">
+    <p class="section-label reveal">Legal documentation</p>
+    <h2 class="section-title reveal">TERMS &<br>CONDITIONS</h2>
+    <p class="terms-effective reveal">PEDRO'S DAY PARTY 2026 &nbsp;·&nbsp; EFFECTIVE DATE: THE MOMENT YOU READ THIS &nbsp;·&nbsp; LAST UPDATED: WHENEVER PEDRO REMEMBERED &nbsp;·&nbsp; JURISDICTION: THE TERRACE</p>
+
+    <div class="terms-section reveal">
+      <h3><span class="terms-num">1.0</span> ACCEPTANCE OF TERMS</h3>
+      <p>By attending, intending to attend, thinking about attending, receiving a WhatsApp message about, or clicking anywhere on this website, you <strong>("the Attendee," "you," "the person who ate all the chips")</strong> agree to be bound by these Terms and Conditions in their entirety.</p>
+      <p>If you do not agree to these Terms, you may not attend the Event. You may still look at this website. You may also reconsider your position, which Pedro finds reasonable and hopes you do.</p>
+      <div class="legal-note">NOTE: These Terms constitute a legally binding agreement between you and Pedro's Day Party ("the Organiser," "Pedro," "the man behind the mixer") and supersede all prior verbal agreements, including anything Pedro said after his third beer.</div>
+    </div>
+
+    <div class="terms-section reveal">
+      <h3><span class="terms-num">2.0</span> DEFINITIONS</h3>
+      <p>For the purposes of this agreement, the following definitions apply:</p>
+      <ul>
+        <li><strong>"The Event"</strong> means Pedro's Day Party 2026, including the Day Party (Phase I) and the After Party (Phase II), collectively referred to as "a really good time."</li>
+        <li><strong>"The Venue"</strong> means the Terrace (Phase I) and the Flat (Phase II), located at the address provided to persons Pedro considers friends.</li>
+        <li><strong>"The Organiser"</strong> means Pedro, acting in his capacity as host, head DJ, chief complaints officer, and hydration enforcement officer.</li>
+        <li><strong>"The Infinite Set"</strong> means Pedro's final DJ set, which has no defined end time and shall be treated as a force of nature for legal purposes.</li>
+        <li><strong>"Ringo"</strong> means the cat. Ringo is not a party to this agreement. Ringo is not a party to anything. Ringo operates independently of all legal frameworks.</li>
+        <li><strong>"The Chips"</strong> means the structural snack provision described in Section 8.2. The Chips are guaranteed.</li>
+        <li><strong>"The Drop"</strong> means the moment in a track you will miss if you go to the corner shop during the After Party. See Section 6.1.</li>
+      </ul>
+    </div>
+
+    <div class="terms-section reveal">
+      <h3><span class="terms-num">3.0</span> TICKET TERMS</h3>
+      <p><span class="terms-num">3.1</span> All tickets are issued at a price of <strong>€0.00 (zero euros)</strong>. This price is final, non-negotiable, and frankly very generous.</p>
+      <p><span class="terms-num">3.2</span> <strong>Refunds.</strong> As the ticket price is €0.00, any refund request constitutes a claim for the return of nothing. Pedro's Day Party will process all such requests within 3–5 business decades through its dedicated Refund Department, which operates Monday to Monday, 14:00 to 14:02 GMT.</p>
+      <p><span class="terms-num">3.3</span> <strong>Ticket transfers.</strong> Tickets may be transferred to a third party subject to: (a) notifying Pedro, (b) providing a brief character reference of the transferee using vibes-based criteria, and (c) the transferee agreeing to these Terms in their entirety, including the water clause.</p>
+      <p><span class="terms-num">3.4</span> The QR code generated upon registration is for presentational purposes. Pedro does not own a scanner. He will know who you are or he will ask. Both outcomes are acceptable.</p>
+      <div class="legal-note">IMPORTANT: A ticket does not guarantee entry to the After Party. After Party admission is contingent on being physically present when the terrace closes at 23:00. See Section 6.0 (After Party Protocols).</div>
+    </div>
+
+    <div class="terms-section reveal">
+      <h3><span class="terms-num">4.0</span> ATTENDEE OBLIGATIONS</h3>
+      <p>By attending the Event, the Attendee agrees to:</p>
+      <ul>
+        <li><span class="terms-num">4.1</span> Conduct themselves in a manner consistent with good vibes at all times.</li>
+        <li><span class="terms-num">4.2</span> Not touch the master volume. Under any circumstances. This is not a suggestion.</li>
+        <li><span class="terms-num">4.3</span> Read the room during Open DJ Sessions and select music appropriate to a sunny afternoon house party, not their SoundCloud debut.</li>
+        <li><span class="terms-num">4.4</span> Consume adequate water throughout the Event, particularly during the After Party. Proof of hydration may be requested by the Organiser at any time. Acceptable proof: holding a water bottle, answering "yes" when asked, visible non-dehydration.</li>
+        <li><span class="terms-num">4.5</span> Not request songs that Pedro has already decided he will not play. The Organiser reserves the right to define this list dynamically and without notice.</li>
+        <li><span class="terms-num">4.6</span> Approach Ringo with appropriate restraint. Ringo has not agreed to these Terms. Ringo has not agreed to anything. Do not interpret his presence as consent.</li>
+        <li><span class="terms-num">4.7</span> Contribute to the communal snack situation where possible. The chips are guaranteed by the Organiser. Everything else is a collaborative effort.</li>
+      </ul>
+    </div>
+
+    <div class="terms-section reveal">
+      <h3><span class="terms-num">5.0</span> INTELLECTUAL PROPERTY</h3>
+      <p><span class="terms-num">5.1</span> The raccoon logo, branding, and the name "Pedro's Day Party" are the intellectual property of Pedro. Any unauthorised reproduction of the raccoon will be met with disappointment and a strongly worded message in the group chat.</p>
+      <p><span class="terms-num">5.2</span> All music played during the Event is the intellectual property of its respective creators, Pedro included. Pedro's sets may not be recorded and uploaded without permission. Pedro will probably give permission. Just ask.</p>
+      <p><span class="terms-num">5.3</span> The phrase <em>"read the room"</em> as used in these Terms is attributed to common sense, which is jointly owned by everyone and consistently underutilised.</p>
+      <div class="legal-note">The terrace blue wall is the intellectual property of the building and has been peeling since approximately 2003. It is protected under Portuguese architectural heritage law (probably). Do not touch the wall in a way that accelerates the peeling.</div>
+    </div>
+
+    <div class="terms-section reveal">
+      <h3><span class="terms-num">6.0</span> AFTER PARTY PROTOCOLS</h3>
+      <p><span class="terms-num">6.1</span> <strong>Re-entry.</strong> The Venue (Phase II) closes its doors at 23:00. No re-entry shall be permitted after this time, including but not limited to: quick shop runs, forgotten items, fresh air breaks, and existential moments on the stairwell. Any person who exits after 23:00 does so at their own risk of missing The Drop.</p>
+      <p><span class="terms-num">6.2</span> <strong>Music policy.</strong> The After Party operates a strict techno-only policy. Requests for non-techno music, including but not limited to: reggaeton, commercial pop, "something to chill to," or anything described as "a bit more accessible," will not be fulfilled. The Day Party was the appropriate time for such requests. That time has passed.</p>
+      <p><span class="terms-num">6.3</span> <strong>The Infinite Set.</strong> The Organiser's final set has no contractual end time. Attendees who remain until the conclusion of the Infinite Set do so voluntarily and may not cite fatigue, sunrise, or impending employment obligations as grounds for complaint. The Organiser accepts no liability for what happens to your Monday.</p>
+      <p><span class="terms-num">6.4</span> <strong>Surprise dance floors.</strong> Certain rooms within the Venue (Phase II) may be designated as dance floors without prior notice. The Attendee agrees to follow the bass and not ask where they are going.</p>
+    </div>
+
+    <div class="terms-section reveal">
+      <h3><span class="terms-num">7.0</span> LIMITATION OF LIABILITY</h3>
+      <p>Pedro's Day Party, its Organiser, sponsors, Ringo, and the extension cable shall not be liable for:</p>
+      <ul>
+        <li>Any damage to the Attendee's Monday morning, Monday afternoon, or in extreme cases, Monday evening.</li>
+        <li>Emotional attachment to the Infinite Set resulting in difficulty re-integrating into normal society.</li>
+        <li>Loss of phone battery due to excessive documentation of the terrace blue wall.</li>
+        <li>Injuries sustained by approaching Ringo without reading the room.</li>
+        <li>Consequences of consuming the mystery homemade dish Pedro made and refused to name.</li>
+        <li>The reggaeton happening or not happening. Either outcome is beyond our control.</li>
+        <li>Any person who cannot locate the correct drop because they were at the corner shop.</li>
+        <li>Spiritual transformation resulting from the After Party. This is a known risk. You were warned by vibes alone.</li>
+      </ul>
+      <div class="legal-note">MAXIMUM LIABILITY: In the event that Pedro's Day Party is found liable for any claim, our total liability shall not exceed the ticket price paid by the Attendee, which is €0.00. We consider this fair.</div>
+    </div>
+
+    <div class="terms-section reveal">
+      <h3><span class="terms-num">8.0</span> CATERING & PROVISIONS</h3>
+      <p><span class="terms-num">8.1</span> The Organiser makes no warranty, express or implied, regarding the availability, quality, or identifiability of food at the Event, with the exception of Section 8.2.</p>
+      <p><span class="terms-num">8.2</span> <strong>THE CHIPS ARE GUARANTEED.</strong> This is the only unconditional commitment made in this entire document. The chips will be present. This is not a promise. This is a structural certainty. If the chips are absent, this agreement is void.</p>
+      <p><span class="terms-num">8.3</span> Water shall be provided in sufficient quantities during the After Party. The Organiser reserves the right to inquire about the Attendee's water consumption at any time. The Attendee agrees to answer honestly.</p>
+      <p><span class="terms-num">8.4</span> Champagne may or may not appear. Its arrival, timing, and occasion cannot be predicted or promised. It was on sale. That is all that is known.</p>
+    </div>
+
+    <div class="terms-section reveal">
+      <h3><span class="terms-num">9.0</span> GOVERNING LAW & DISPUTES</h3>
+      <p><span class="terms-num">9.1</span> These Terms shall be governed by the laws of Portugal, common sense, and whatever Pedro decides on the day.</p>
+      <p><span class="terms-num">9.2</span> Any disputes arising from these Terms shall first be submitted to the Pedro's Day Party Complaints Department via the official complaints form on this website. The Complaints Department response time is 5–7 business years. CAPTCHA completion is required.</p>
+      <p><span class="terms-num">9.3</span> If the Complaints Department fails to resolve the dispute within the stated timeframe (see 9.2), the parties agree to resolve the matter informally over a drink at the next edition of Pedro's Day Party, where the Attendee will likely have a good time and forget what they were complaining about.</p>
+      <p><span class="terms-num">9.4</span> The courts of Lisbon shall have exclusive jurisdiction over any disputes that somehow escalate beyond the above. Pedro considers this extremely unlikely and also somewhat impressive.</p>
+    </div>
+
+    <div class="terms-section reveal">
+      <h3><span class="terms-num">10.0</span> MISCELLANEOUS</h3>
+      <p><span class="terms-num">10.1</span> <strong>Severability.</strong> If any provision of these Terms is found to be unenforceable, the remaining provisions shall continue in full force. If the chips clause (8.2) is found unenforceable, this entire agreement collapses.</p>
+      <p><span class="terms-num">10.2</span> <strong>Entire agreement.</strong> These Terms constitute the entire agreement between the Attendee and the Organiser, superseding all prior communications including but not limited to: WhatsApp messages, voice notes, things Pedro said at the last party, and anything posted in the group chat that has 207 unread messages.</p>
+      <p><span class="terms-num">10.3</span> <strong>Amendments.</strong> Pedro reserves the right to amend these Terms at any time without notice, primarily because he just thought of something funny to add.</p>
+      <p><span class="terms-num">10.4</span> <strong>Force majeure.</strong> Pedro's Day Party shall not be liable for failure to perform its obligations due to events beyond its control, including: extreme weather (though Pedro's optimism constitutes an informal forecast), Ringo deciding not to come out, the sound system having feelings, or the after party going so well that no one noticed it was 8 AM.</p>
+    </div>
+
+    <div class="terms-section reveal">
+      <h3><span class="terms-num">11.0</span> REGGAETON: POLICY, PROVISIONS & CONTRACTUAL AMBIGUITY</h3>
+
+      <p><span class="terms-num">11.1</span> <strong>Statement of intent.</strong> Pedro's Day Party neither confirms nor denies the presence of reggaeton at the Event. Any representation to the contrary — whether verbal, written, implied, or communicated via raised eyebrow — shall be considered non-binding and subject to revision at any time without notice, including during the song itself.</p>
+
+      <p><span class="terms-num">11.2</span> <strong>Definition of reggaeton.</strong> For the purposes of this section, "reggaeton" refers to the genre of music, any song that sounds like reggaeton, any song that transitions into reggaeton, any song that Pedro claims is not reggaeton but clearly is, and any song described by the Organiser as "just one" which subsequently becomes three.</p>
+
+      <p><span class="terms-num">11.3</span> <strong>The TBC slot.</strong> The timetable published on this website contains a slot designated "Reggaeton Intermission — TBC." The Attendee acknowledges that TBC means "To Be Confirmed," and further acknowledges that confirmation may come: (a) in advance, (b) during the slot itself, (c) retrospectively, or (d) never, officially, even if it happened.</p>
+
+      <p><span class="terms-num">11.4</span> <strong>Triggering conditions.</strong> Research conducted over multiple prior editions of Pedro's Day Party suggests reggaeton may occur if one or more of the following conditions are met:</p>
+      <ul>
+        <li>A specific person, whose identity is known to Pedro and will not be disclosed in these Terms, arrives at the Event;</li>
+        <li>The general atmosphere reaches a threshold Pedro describes as "that moment where it just makes sense," the definition of which Pedro has declined to elaborate on despite repeated requests;</li>
+        <li>Pedro has consumed a number of beverages consistent with what he calls "the right headspace for it;" or</li>
+        <li>Someone asks in exactly the right way at exactly the right time, a combination of variables so precise it has occurred twice in recorded history.</li>
+      </ul>
+      <div class="legal-note">NOTE: Satisfaction of one or more triggering conditions does not guarantee reggaeton. It merely increases the probability to a level Pedro characterises as "maybe." This is not a commitment. This is meteorology.</div>
+
+      <p><span class="terms-num">11.5</span> <strong>Prohibition on requesting.</strong> Attendees are expressly prohibited from requesting reggaeton directly. Direct requests have been shown to reduce the probability of reggaeton occurring by approximately 60-80%, a figure Pedro arrived at empirically and refuses to explain further. Indirect strategies — including but not limited to: creating the right atmosphere, being the right energy, or not mentioning it at all — are permitted and are frankly the recommended approach.</p>
+
+      <p><span class="terms-num">11.6</span> <strong>Plausible deniability clause.</strong> In the event that reggaeton does occur, the Organiser reserves the right to characterise it as: (a) a one-off, (b) an accident, (c) "this doesn't count," (d) "this is technically not reggaeton," or (e) a contextually justified deviation from the programme. The Attendee agrees to accept whichever characterisation Pedro offers and not to press the matter further, particularly in the group chat.</p>
+
+      <p><span class="terms-num">11.7</span> <strong>The After Party exception.</strong> Section 6.2 of these Terms establishes a strict techno-only policy for the After Party. Section 6.2 and Section 11.0 are in direct tension and both apply simultaneously. The Organiser acknowledges this contradiction and considers it a feature of the legal architecture rather than a drafting error. In the event of conflict between 6.2 and 11.0, the applicable section shall be determined in real time by Pedro, based on how the night is going. This determination is final and not subject to appeal.</p>
+
+      <p><span class="terms-num">11.8</span> <strong>Historical record.</strong> The official historical record of Pedro's Day Party contains no confirmed instances of reggaeton. It does contain several unconfirmed instances, one partial instance described by witnesses as "ambiguous," and one incident in which Pedro played a song he has since classified as "genre unclear." The Organiser considers this record accurate. Several attendees disagree. Their disagreement is noted and filed under Section 9.2 (Complaints).</p>
+
+      <p><span class="terms-num">11.9</span> <strong>No warranty.</strong> Pedro's Day Party makes no warranty, express or implied, that reggaeton will occur, will not occur, is being planned, is not being planned, has been considered, or has not been considered. Any anticipation of reggaeton formed by the Attendee on the basis of vibes, rumour, or prior experience is formed entirely at the Attendee's own risk. Pedro cannot be held responsible for your hope.</p>
+
+      <div class="legal-note" style="border-left-color: var(--accent);">FINAL CLARIFICATION REQUESTED BY LEGAL (Pedro, standing in his kitchen): This section does not confirm reggaeton. This section does not deny reggaeton. This section exists because the question kept coming up and Pedro felt it deserved a thorough non-answer. If you are reading this looking for a yes or a no, you will not find one. What you will find is Section 11.0 in its entirety, which you have now read, and which has not answered your question, and which was always going to end this way. Thank you for your understanding. See you at the party.</div>
+    </div>
+
+    <div class="terms-section reveal">
+      <h3><span class="terms-num">12.0</span> MISCELLANEOUS (CONTINUED)</h3>
+      <p>See Section 10.0. Nothing further to add except that Pedro has now read these Terms in full and is satisfied with them, particularly Section 11.0, which he considers his finest work.</p>
+    </div>
+
+    <div class="terms-signature reveal">
+      <div class="terms-sig-block">
+        <div class="sig-label">Signed on behalf of Pedro's Day Party</div>
+        <div class="sig-line"></div>
+        <div class="sig-name">
+          Pedro
+          <span>Organiser, Head DJ, Chief Complaints Officer, Hydration Enforcement, The Man Himself</span>
+        </div>
+      </div>
+      <div class="terms-sig-block">
+        <div class="sig-label">Accepted by Attendee (implied by clicking anything)</div>
+        <div class="sig-line"></div>
+        <div class="sig-name">
+          You
+          <span>The person reading this. Yes, you. By scrolling this far you have accepted everything.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <!-- ─── FOOTER ─── -->
 <footer>
-  <div class="footer-brand">
-    PEDRO'S<br>DAY PARTY
-    <span>EST. 2026 · A TERRACE PRODUCTION</span>
+  <div class="footer-top">
+
+    <div class="footer-col footer-col-brand">
+      <div class="footer-brand">
+        PEDRO'S<br>DAY PARTY
+        <span>EST. 2026 · A TERRACE PRODUCTION</span>
+      </div>
+      <p>A curated residential audio experience in Lisbon. Two phases. One raccoon. Zero refunds. Infinite techno.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>The Event</h4>
+      <ul>
+        <li><a onclick="showTab('home', null)">Home</a></li>
+        <li><a onclick="showTab('about', null)">About</a></li>
+        <li><a onclick="showTab('lineup', null)">Lineup & After Party</a></li>
+        <li><a onclick="showTab('location', null)">Location</a></li>
+        <li><a onclick="showTab('tickets', null)">Get Tickets</a><span>Free · €0.00</span></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>More</h4>
+      <ul>
+        <li><a onclick="showTab('merch', null)">Merch</a><span>Currently out of stock</span></li>
+        <li><a onclick="showTab('equipment', null)">Equipment</a></li>
+        <li><a onclick="showTab('faq', null)">FAQs</a></li>
+        <li><a onclick="showTab('sponsors', null)">Sponsors</a></li>
+        <li><a onclick="showTab('press', null)">Press & Media</a></li>
+        <li><a onclick="showTab('complaints', null)">Complaints</a><span>Response time: 5-7 years</span></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a onclick="alert('Pedro is not available right now. He is probably in the group chat.')">Message Pedro</a></li>
+        <li><a onclick="alert('The group chat has 207 unread messages. You are now one of them.')">Join Group Chat</a></li>
+        <li><a onclick="showTab('complaints', null)">File a Complaint</a><span>CAPTCHA required</span></li>
+        <li><a onclick="alert('Pedro does not have a press team. Pedro is the press team. Pedro is asleep.')">Press Enquiries</a></li>
+      </ul>
+    </div>
+
   </div>
-  <div class="footer-copy">
-    © 2026 Pedro's Day Party<br>
-    No animals were harmed in the making of this website.<br>
-    The same cannot be said for Pedro's sleep schedule.
+
+  <div class="footer-sponsors-strip">
+    <span class="fss-label">Partners & Sponsors</span>
+    <span class="footer-sponsor-logo">PEDRO'S MUM</span>
+    <span style="color:rgba(232,217,181,0.08); font-size:0.8rem;">·</span>
+    <span class="footer-sponsor-logo">WHATEVER WAS ON SALE</span>
+    <span style="color:rgba(232,217,181,0.08); font-size:0.8rem;">·</span>
+    <span class="footer-sponsor-logo">THE SUN</span>
+    <span style="color:rgba(232,217,181,0.08); font-size:0.8rem;">·</span>
+    <span class="footer-sponsor-logo">THE NEIGHBOURS</span>
+    <span style="color:rgba(232,217,181,0.08); font-size:0.8rem;">·</span>
+    <span class="footer-sponsor-logo">THE CHIPS</span>
+    <span style="color:rgba(232,217,181,0.08); font-size:0.8rem;">·</span>
+    <span class="footer-sponsor-logo">RINGO (TBC)</span>
+    <span style="color:rgba(232,217,181,0.08); font-size:0.8rem;">·</span>
+    <span class="footer-sponsor-logo">THE GROUP CHAT</span>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-copy">
+      © 2026 Pedro's Day Party · All rights reserved, vigorously.<br>
+      No animals were harmed. Pedro's sleep schedule cannot say the same.
+    </div>
+    <div class="footer-legal-links">
+      <a onclick="showTab('terms', null)">Terms & Conditions</a>
+      <a onclick="showTab('sponsors', null)">Sponsors</a>
+      <a onclick="alert('Privacy Policy: Pedro does not share your data. Pedro barely looks at your data. Pedro has 207 unread messages.')">Privacy Policy</a>
+      <a onclick="alert('Cookie Policy: There are no cookies on this website. There were chips at the party but they ran out.')">Cookie Policy</a>
+      <a onclick="showTab('complaints', null)">Complaints</a>
+    </div>
   </div>
 </footer>
 
